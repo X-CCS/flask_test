@@ -9,7 +9,7 @@
     {{ form.csrf_token }}
     <p>
         {{ form.username.label }}{{ form.username(style='color:red', placeholder='请输入用户名') }}{{ form.username.errors }}</p>
-    <p>{{ form.password.label }}{{ form.password }}{{ form.password.errors }}</p>
+    <p>{{ form.password.label }}{{ form.password() }}{{ form.password.errors }}</p>
     <p>{{ form.submit() }}</p>
 </form>
 </body>
