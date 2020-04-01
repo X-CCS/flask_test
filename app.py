@@ -28,6 +28,7 @@ def wtf_form():
 
 
 @app.route('/')
+@app.route('/index/')
 def hello_world():
     return 'Hello World!'
 
