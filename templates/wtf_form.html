@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<form action="{{ url_for('wtf_form') }}" method="post">
+    {{ form.csrf_token }}
+    <p>
+        {{ form.username.label }}{{ form.username(style='color:red', placeholder='请输入用户名') }}{{ form.username.errors }}</p>
+    <p>{{ form.password.label }}{{ form.password }}{{ form.password.errors }}</p>
+    <p>{{ form.submit() }}</p>
+</form>
+</body>
+</html>
